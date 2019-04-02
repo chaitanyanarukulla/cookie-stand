@@ -1,20 +1,13 @@
 'use strict'
 var hours = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm']
 
-var pike_storer = {
+var pike_store = {
     cookiesSoldPerHour :[],
     location : "1st and pike",
     minNumberOfCustomersPerHour: 23,
     maxNumberOfCustomersPerHour: 65,
     avgCookiesSoldPerCustomer:6.3,
 
-    totalCookiesSold : function(){
-    var total = 0;
-    for (var i = 0; i < this.cookiesSoldPerHour.length; i++){
-        total += this.cookiesSoldPerHour[i];
-      };
-      return total
-    },
 
     customerPerHour:function() {
         return Math.floor(Math.random()*(65-23)+23)
@@ -25,12 +18,23 @@ var pike_storer = {
           this.cookiesSoldPerHour.push(Math.floor(this.avgCookiesSoldPerCustomer*this.customerPerHour()))
             }
         console.log(this.cookiesSoldPerHour)
+
     },
-   
 
-};
+    //Calculates the total cookies sold
+    totalCookiesSold : function(){
+        var total = 0;
+        for (var i = 0; i < this.cookiesSoldPerHour.length; i++){
+            total += this.cookiesSoldPerHour[i];
+          };
+          return total
+        },
 
-
+    };
+    
+   pike_store.cookiesSoldPerHourMethod();
+    
+    
 var seaTacAirport_store = {
     cookiesSoldPerHour :[],
     location : "SeaTac Airport",
@@ -50,7 +54,8 @@ var seaTacAirport_store = {
         console.log(this.cookiesSoldPerHour)
     },
 
-}
+};
+
 seaTacAirport_store.cookiesSoldPerHourMethod();
 var seattleCenter_store = {
     cookiesSoldPerHour :[],
@@ -108,3 +113,15 @@ var alki_storer = {
         console.log(this.cookiesSoldPerHour)
     },
 };
+
+var ulEL = document.getElementById('pike');
+
+var liEL = document.createElement('li');
+liEL.textContent = pike_store.location;
+console.log(pike_store.location);
+ulEL.appendChild(liEL);
+
+
+
+
+
