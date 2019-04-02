@@ -1,1 +1,14 @@
-\
+.stores {
+    padding:1rem;
+    margin: 1rem;
+    color:salmon;
+    display: inline-block;
+ 
+
+}
+h3,p {
+    display: inline;
+}
+li{
+    list-style: none;
+}
