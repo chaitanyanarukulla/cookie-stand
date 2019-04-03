@@ -73,7 +73,7 @@ function makeaHeaderRow() {
     trEl.appendChild(thEl);
   }
   thEl = document.createElement('th');
-  thEl.textContent = 'Total';
+  thEl.textContent = ' Location Total';
   trEl.appendChild(thEl);
   storeTable.appendChild(trEl);
 }
@@ -95,11 +95,18 @@ function makeFotterRow() {
   }
   for (var i = 0; i < hours.length; i++) {
     thEl = document.createElement('th');
-    
     thEl.textContent = hourlyTotal[i];
-    console.log('this is hourly total ',thEl.textContent)
     trEl.appendChild(thEl);
   }
+  // CalcuLATING GTAND TOTAL 
+  var grandTotal = 0;
+  for (var k = 0; k < hourlyTotal.length; k++) {
+  grandTotal += hourlyTotal[k];
+  }
+  thEl = document.createElement('th');
+  thEl.textContent = grandTotal;
+  trEl.appendChild(thEl);
+
 };
 //instance of an store----------------------------------------------------------------------------------
 var Pike = new Store('Pike',23,65,6.3,'1st and Pike');
