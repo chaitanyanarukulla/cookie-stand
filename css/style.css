@@ -23,3 +23,7 @@ body {
    margin: 2em;
    font-size: 3em;
 }
+table td tr th {
+    padding:3rem;
+    margin: 3re;
+}
