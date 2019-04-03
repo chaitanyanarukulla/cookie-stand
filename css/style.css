@@ -23,7 +23,16 @@ body {
    margin: 2em;
    font-size: 3em;
 }
-table td tr th {
-    padding:3rem;
-    margin: 3re;
+table ,tr th  { background:salmon;
+    padding: 1rem;
+    margin:1rem;
 }
+td{
+    padding: 1rem;
+
+    
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
