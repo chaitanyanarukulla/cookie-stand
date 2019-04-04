@@ -3,7 +3,7 @@ body{
     background-image: url("/Users/narukc/codefellows/201/labs/cookie-stand/img/salmon.png");
     background-repeat:no-repeat;
     background-size:contain;
-    opacity: .9;
+    opacity: .8;
     font-family: 'Lobster', cursive;
   }
   .logo{
