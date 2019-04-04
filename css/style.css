@@ -16,7 +16,7 @@ body{
     list-style: none;
   }
   nav > ul > li{
-    background-color: black;
+    background-color:#BFBBBF;
   opacity: .9;
   width: 150px;
     height: 40px;
@@ -83,13 +83,13 @@ body{
     border-radius: 6px;
   }
   th {
-    background-color: #E0E0E2;
+    background-color:#726F64;
     border: 2px solid ;
     padding: 10px;
     border-radius: 7px;
   }
   #mainpage{
-    background-color: #416788;
+    background-color:#BFBBBF;
     width: 100%;
   }
   input{
@@ -114,7 +114,7 @@ body{
     color: red;
   }
   form{
-    background: #B5BAD0;
+    background:#BF6D3B;
     border-radius: 15px;
     padding: 0px;
   }
