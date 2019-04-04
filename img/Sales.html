@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///Users/narukc/codefellows/201/labs/cookie-stand/sales.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="file:///Users/narukc/codefellows/201/labs/cookie-stand/css/style.css">
+</head>
+<body>
+    <header>
+            <h1>P.N.W Salmon Cookies Stores</h1>
+                <ul>
+                <li class="nav"><a href="file:///Users/narukc/codefellows/201/labs/cookie-stand/index.html">Home</a></li>
+                <li class="nav"><a href="file:///Users/narukc/codefellows/201/labs/cookie-stand/sales.html">Sales</a></li>
+            </ul>
+    </header>
+
+
+<section id="inputStoreForm">
+    <form id="store-form">
+        <fieldset>
+            <legend>Sams Cookie Store Information</legend>
+            <div>
+                <label for="storeName">Store Name: </label>
+                <input name="storeName" type="text" placeholder="Store Name" required="">
+            </div>
+            <div>
+                <label for="minCustomerEachHour">Minimum Customers Per Hour: </label>
+                <input name="minCustomerEachHour" type="number" min="0" placeholder="Number" required="">
+            </div>
+            <div>
+                <label for="maxCustomerEachHour">Maximum Customers per Hour: </label>
+                <input name="maxCustomerEachHour" type="number" min="0" placeholder="Number" required="">
+            </div>
+            <div>
+                <label for="avgCookiePerCustomer">Average Cookie Sale per Customer: </label>
+                <input name="avgCookiePerCustomer" type="number" min="0.0" step="0.1" placeholder="Number" required="">
+            </div>
+            <div>
+                <button type="submit">Add Store</button>
+            </div>
+        </fieldset>
+	</form>
+</section>
+
+<!-- SECTION 2 DAILY SALES TABLE-->
+<section id="dailySales"><h2>Daily Sales</h2><table><thead><tr id="tableHeader"><th>Location</th><th>6:00am</th><th>7:00am</th><th>8:00am</th><th>9:00am</th><th>10:00am</th><th>11:00am</th><th>12:00pm</th><th>1:00pm</th><th>2:00pm</th><th>3:00pm</th><th>4:00pm</th><th>5:00pm</th><th>6:00pm</th><th>7:00pm</th><th>8:00pm</th><th>Daily Total</th></tr></thead><tbody><tr><th>1st and Pike</th><td>246</td><td>404</td><td>410</td><td>290</td><td>397</td><td>234</td><td>284</td><td>189</td><td>196</td><td>271</td><td>234</td><td>284</td><td>164</td><td>297</td><td>385</td><td>4285</td></tr><tr><th>SeaTac Airport</th><td>12</td><td>27</td><td>29</td><td>20</td><td>26</td><td>22</td><td>18</td><td>16</td><td>29</td><td>4</td><td>5</td><td>21</td><td>9</td><td>29</td><td>27</td><td>294</td></tr><tr><th>Seattle Center</th><td>97</td><td>115</td><td>130</td><td>74</td><td>97</td><td>41</td><td>86</td><td>63</td><td>141</td><td>63</td><td>137</td><td>41</td><td>56</td><td>93</td><td>67</td><td>1301</td></tr><tr><th>Capital Hill</th><td>51</td><td>63</td><td>76</td><td>76</td><td>58</td><td>65</td><td>81</td><td>60</td><td>88</td><td>51</td><td>56</td><td>88</td><td>46</td><td>58</td><td>67</td><td>984</td></tr><tr><th>Alki</th><td>10</td><td>56</td><td>33</td><td>60</td><td>33</td><td>42</td><td>42</td><td>23</td><td>28</td><td>19</td><td>33</td><td>10</td><td>14</td><td>56</td><td>69</td><td>528</td></tr></tbody><tfoot><tr><th>Total Sale Pre Hour</th><td>416</td><td>665</td><td>678</td><td>520</td><td>611</td><td>404</td><td>511</td><td>351</td><td>482</td><td>408</td><td>465</td><td>444</td><td>289</td><td>533</td><td>615</td><td>7392</td></tr></tfoot></table></section>
+
+
+<script src="file:///Users/narukc/codefellows/201/labs/cookie-stand/js/app.js"></script>
+
+</body></html>
