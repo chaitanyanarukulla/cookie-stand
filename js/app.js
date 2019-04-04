@@ -122,7 +122,7 @@ function handelSubbmit(e) {
   renderSalesTable();
 }
 
-// Function to instantiate store 
+// Function to instantiate store ---------------------------------------------------------------------->
 function makeStores() {
   var stores = [];
   initialStores.forEach(function(store) {
