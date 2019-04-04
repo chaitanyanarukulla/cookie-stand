@@ -11,35 +11,34 @@
 <body>
     <header>
             <h1>P.N.W Salmon Cookies Stores</h1>
+        </header>
+        
+        
+        <section id="inputStoreForm">
+            <form id="store-form">
                 <ul>
-                <li class="nav"><a href="index.html"><button>Home Page</button></a></li>
-                <li class="nav"><a href="sales.html"><button>Sales Page</button></a></li>
-            </ul>
-    </header>
-
-
-<section id="inputStoreForm">
-    <form id="store-form">
-        <fieldset>
-            <legend>Sams Cookie Store Information</legend>
-            <div>
-                <label for="storeName">Store Name: </label>
-                <input name="storeName" type="text" placeholder="Store Name" required>
-            </div>
-            <div>
-                <label for="minCustomerEachHour">Minimum Customers Per Hour: </label>
-                <input name="minCustomerEachHour" type="number" min="0" placeholder="Number" required>
-            </div>
-            <div>
-                <label for="maxCustomerEachHour">Maximum Customers per Hour: </label>
-                <input name="maxCustomerEachHour" type="number" min="0" placeholder="Number" required>
-            </div>
-            <div>
-                <label for="avgCookiePerCustomer">Average Cookie Sale per Customer: </label>
-                <input name="avgCookiePerCustomer" type="number" min="0.0" step="0.1" placeholder="Number" required>
-            </div>
-            <div>
-                <button type="submit">Add Store</button>
+                </ul>
+                <fieldset>
+                    <legend>Sams Cookie Store Information</legend>
+                    <div>
+                        <label for="storeName">Store Name: </label>
+                        <input name="storeName" type="text" placeholder="Store Name" required>
+                    </div>
+                    <div>
+                        <label for="minCustomerEachHour">Minimum Customers Per Hour: </label>
+                        <input name="minCustomerEachHour" type="number" min="0" placeholder="Number" required>
+                    </div>
+                    <div>
+                        <label for="maxCustomerEachHour">Maximum Customers per Hour: </label>
+                        <input name="maxCustomerEachHour" type="number" min="0" placeholder="Number" required>
+                    </div>
+                    <div>
+                        <label for="avgCookiePerCustomer">Average Cookie Sale per Customer: </label>
+                        <input name="avgCookiePerCustomer" type="number" min="0.0" step="0.1" placeholder="Number" required>
+                    </div>
+                    <div>
+                        <a href="index.html"><button>Go To Home Page</button></a>
+                        <button type="submit">Add Store</button>
             </div>
         </fieldset>
 	</form>
