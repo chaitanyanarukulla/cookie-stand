@@ -5,48 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sales</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 </head>
 <body>
-    <header>
-            <h1>P.N.W Salmon Cookies Stores</h1>
-        </header>
-        
-        
+    <!-- header and nav ------------------------------------------------------------------------------------------------>
+<header>
+    <nav>
+      <ul>
+          <li><a href ='index.html'>HOME</a></li>
+        <li><a href = "sales.html">SALES</a></li>
+        <li><a href ='http://www.bhg.com/recipe/cookies/pacific-salmon-cookies/'>BLOG</a></li>
+        <li><a href ="">LOCATIONS</a>
+          <ul>
+              <li><a>PIKE</a></li>
+              <li><a>SEATAC</a></li>
+              <li><a>SEATTLE-CENTER</a></li>
+              <li><a>CAPITOL-HILL</a></li>
+              <li><a>ALKI</a></li>
+          </ul></li>
+        <li><a href="">CONTACT-US</a>
+            <ul>
+              <li><a>Office <br>123-456-5678</a></li>
+              <li><a>Delivery<br>456-567-4567</a></li>
+              <li><a>Fax<br>345-876-9090</a></li>
+              </ul></li>
+              </ul>
+    </nav>
+</header>
+<!-- Form Section -------------------------------------------------------------------------------------------------------->
+<main>
         <section id="inputStoreForm">
             <form id="store-form">
-                <ul>
-                </ul>
                 <fieldset>
-                    <legend>Sams Cookie Store Information</legend>
-                    <div>
                         <label for="storeName">Store Name: </label>
-                        <input name="storeName" type="text" placeholder="Store Name" required>
-                    </div>
-                    <div>
+                        <input name="storeName" type="text" placeholder="Store Name" required><br>
                         <label for="minCustomerEachHour">Minimum Customers Per Hour: </label>
                         <input name="minCustomerEachHour" type="number" min="0" placeholder="Number" required>
-                    </div>
-                    <div>
                         <label for="maxCustomerEachHour">Maximum Customers per Hour: </label>
                         <input name="maxCustomerEachHour" type="number" min="0" placeholder="Number" required>
-                    </div>
-                    <div>
                         <label for="avgCookiePerCustomer">Average Cookie Sale per Customer: </label>
                         <input name="avgCookiePerCustomer" type="number" min="0.0" step="0.1" placeholder="Number" required>
-                    </div>
-                    <div>
-                        <a href="index.html"><button>Go To Home Page</button></a>
-                        <button type="submit">Add Store</button>
-            </div>
-        </fieldset>
-	</form>
+                        <button type="submit">Add New Store</button>
+                </fieldset>
+	       </form>
 </section>
 
-<section id="dailySales">
-</section>
 </main>
+<div id="dailySales"> </div>
+<footer>
+        <br><p style="text-align:center">Copyright &copy; 2019 All Rights Reserved by <a href="#">Chai and Sam </a>.</p>
+</footer>
 
 <script src="js/app.js"></script>
 </body>
