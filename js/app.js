@@ -67,7 +67,6 @@ function renderTableBody(table) {
 function renderSalesTable() {
   var sectionEl = document.getElementById('dailySales');
   sectionEl.textContent = '';
-  appendNewElement('Daily Sales', 'h2', sectionEl);
   var table = document.createElement('table');
   renderTableHeader(table);
   renderTableBody(table);
